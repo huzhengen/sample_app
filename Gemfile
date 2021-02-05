@@ -1,7 +1,8 @@
-source 'https://gems.ruby-china.com'
+# source 'https://gems.ruby-china.com'
+source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# ruby '2.5.5'
+ruby '2.5.5'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'bootstrap-sass', '~> 3.4.1'
