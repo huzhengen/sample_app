@@ -1,5 +1,5 @@
-# source 'https://gems.ruby-china.com'
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.com'
+# source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.5'
@@ -42,6 +42,7 @@ group :development, :test do
   gem 'sqlite3', '1.4.1'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec'
 end
 
 group :development do
@@ -63,6 +64,7 @@ end
 
 group :production do
   gem 'pg', '1.1.4'
+  gem 'puma', '~> 3.11'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
